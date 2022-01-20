@@ -1,0 +1,28 @@
+object FrameLog: TFrameLog
+  Size.Width = 405.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object Label1: TLabel
+    Align = Top
+    StyledSettings = [Family, FontColor]
+    Size.Width = 405.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Log de Opera'#231#245'es'
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Size.Width = 405.000000000000000000
+    Size.Height = 215.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 401.000000000000000000
+    Viewport.Height = 211.000000000000000000
+  end
+end

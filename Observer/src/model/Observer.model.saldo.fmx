@@ -1,0 +1,126 @@
+object FrameSaldo: TFrameSaldo
+  Size.Width = 304.000000000000000000
+  Size.Height = 125.000000000000000000
+  Size.PlatformDefault = False
+  object Label1: TLabel
+    Align = Top
+    StyledSettings = [Family, FontColor]
+    Size.Width = 304.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Balan'#231'o Financeiro'
+    TabOrder = 0
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 304.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Layout2: TLayout
+      Align = Top
+      Size.Width = 304.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Label2: TLabel
+        Align = Left
+        StyledSettings = [Family, Size]
+        Margins.Left = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claGreen
+        Text = 'Cr'#233'ditos'
+        TabOrder = 0
+      end
+      object LabelCreditos: TLabel
+        Align = Right
+        StyledSettings = [Family, Size]
+        Margins.Right = 5.000000000000000000
+        Position.X = 179.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claGreen
+        TextSettings.HorzAlign = Trailing
+        Text = 'LabelCreditos'
+        TabOrder = 1
+      end
+    end
+    object Layout3: TLayout
+      Align = Top
+      Position.Y = 66.000000000000000000
+      Size.Width = 304.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label6: TLabel
+        Align = Left
+        StyledSettings = [Family, Size, FontColor]
+        Margins.Left = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Saldo'
+        TabOrder = 0
+      end
+      object LabelSaldo: TLabel
+        Align = Right
+        StyledSettings = [Family, Size, FontColor]
+        Margins.Right = 5.000000000000000000
+        Position.X = 179.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Trailing
+        Text = 'LabelSaldo'
+        TabOrder = 1
+      end
+    end
+    object Layout4: TLayout
+      Align = Top
+      Position.Y = 33.000000000000000000
+      Size.Width = 304.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label4: TLabel
+        Align = Left
+        StyledSettings = [Family, Size]
+        Margins.Left = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claRed
+        Text = 'D'#233'bitos'
+        TabOrder = 0
+      end
+      object LabelDebitos: TLabel
+        Align = Right
+        StyledSettings = [Family, Size]
+        Margins.Right = 5.000000000000000000
+        Position.X = 179.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claRed
+        TextSettings.HorzAlign = Trailing
+        Text = 'LabelDebitos'
+        TabOrder = 1
+      end
+    end
+  end
+end

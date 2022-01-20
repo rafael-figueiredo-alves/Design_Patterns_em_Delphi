@@ -1,0 +1,51 @@
+object FrameAgrupamento: TFrameAgrupamento
+  Size.Width = 429.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object Grid1: TGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 429.000000000000000000
+    Size.Height = 215.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    RowCount = 0
+    Viewport.Width = 425.000000000000000000
+    Viewport.Height = 190.000000000000000000
+  end
+  object Label1: TLabel
+    Align = Top
+    StyledSettings = [Family, FontColor]
+    Size.Width = 429.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'D'#233'bitos agrupados por categoria'
+    TabOrder = 0
+  end
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 24
+    Top = 8
+    object ClientDataSet1Categoria: TStringField
+      DisplayWidth = 50
+      FieldName = 'Categoria'
+      Size = 50
+    end
+    object ClientDataSet1Total: TCurrencyField
+      FieldName = 'Total'
+      DisplayFormat = '#,##0.00'
+      EditFormat = '#,##0.00'
+    end
+  end
+  object BindSourceDB12: TBindSourceDB
+    DataSet = ClientDataSet1
+    ScopeMappings = <>
+    Left = 104
+    Top = 40
+  end
+end

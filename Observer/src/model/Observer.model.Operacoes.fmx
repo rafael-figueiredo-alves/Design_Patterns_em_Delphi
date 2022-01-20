@@ -1,0 +1,182 @@
+﻿object FrameOperacoes: TFrameOperacoes
+  Size.Width = 519.000000000000000000
+  Size.Height = 529.000000000000000000
+  Size.PlatformDefault = False
+  object Grid1: TGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 519.000000000000000000
+    Size.Height = 376.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowCount = 0
+    Viewport.Width = 515.000000000000000000
+    Viewport.Height = 351.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 519.000000000000000000
+    Size.Height = 153.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Layout2: TLayout
+      Align = Left
+      Size.Width = 321.000000000000000000
+      Size.Height = 153.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Layout3: TLayout
+        Align = Top
+        Size.Width = 321.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object ComboOperacao: TComboBox
+          Align = Left
+          Items.Strings = (
+            'Cr'#233'dito'
+            'D'#233'bito')
+          ItemIndex = 0
+          Margins.Top = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 89.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 216.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+        object Label1: TLabel
+          Align = Left
+          StyledSettings = [Family, Style, FontColor]
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 84.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          Text = 'Opera'#231#227'o:'
+          TabOrder = 1
+        end
+      end
+      object Layout4: TLayout
+        Align = Top
+        Position.Y = 50.000000000000000000
+        Size.Width = 321.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object ComboCategoria: TComboBox
+          Align = Left
+          Items.Strings = (
+            'Sa'#250'de'
+            'Mercado'
+            'Educa'#231#227'o'
+            'Transporte'
+            'Outros'
+            'Sal'#225'rio')
+          ItemIndex = 0
+          Margins.Top = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 89.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 216.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+        object Label2: TLabel
+          Align = Left
+          StyledSettings = [Family, Style, FontColor]
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 84.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          Text = 'Categoria:'
+          TabOrder = 1
+        end
+      end
+      object Layout5: TLayout
+        Align = Top
+        Position.Y = 100.000000000000000000
+        Size.Width = 321.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object EditValor: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Left
+          TabOrder = 0
+          Position.X = 57.000000000000000000
+          Position.Y = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 248.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label3: TLabel
+          Align = Left
+          StyledSettings = [Family, Style, FontColor]
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 52.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          Text = 'Valor:'
+          TabOrder = 1
+        end
+      end
+    end
+    object Button1: TButton
+      Align = Center
+      Size.Width = 93.000000000000000000
+      Size.Height = 76.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'additembutton'
+      TabOrder = 1
+      Text = 'Button1'
+      OnClick = Button1Click
+    end
+  end
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 56
+    Top = 176
+    object ClientDataSet1Operação: TStringField
+      DisplayWidth = 50
+      FieldName = 'Opera'#231#227'o'
+      Size = 50
+    end
+    object ClientDataSet1Categoria: TStringField
+      FieldName = 'Categoria'
+      Size = 50
+    end
+    object ClientDataSet1Valor: TCurrencyField
+      FieldName = 'Valor'
+    end
+  end
+  object BindSourceDB12: TBindSourceDB
+    DataSet = ClientDataSet1
+    ScopeMappings = <>
+    Left = 248
+    Top = 248
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB12: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB12
+      GridControl = Grid1
+      Columns = <>
+    end
+  end
+end
