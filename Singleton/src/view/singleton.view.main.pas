@@ -33,19 +33,19 @@ uses
 {$R *.fmx}
 
 procedure TForm5.Button1Click(Sender: TObject);
-var teste : idata;
+//var teste : idata;
 begin
-  teste := tModeldata.New;
-  Memo1.Lines.Add(teste.data);
+  //teste := tModeldata.New;
+  Memo1.Lines.Add(tModeldata.New.data);
 end;
 
 procedure TForm5.Button2Click(Sender: TObject);
-var
- Teste2 : idata;
+//var
+// Teste2 : idata;
 begin
-  teste2 := tModeldata.New;
-  teste2.data(edit1.Text);
-  Memo1.Lines.Add(teste2.data);
+  //teste2 := tModeldata.New;
+  tModeldata.New.data(edit1.Text);
+  Memo1.Lines.Add(tModeldata.New.data);
 end;
 
 end.
